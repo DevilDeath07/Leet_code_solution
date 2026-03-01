@@ -1,0 +1,23 @@
+-----------------python----------------------------
+
+class Solution:
+    def minPartitions(self, n: str) -> int:
+        return int(max(n))
+
+
+---------------------------(or)-------------------------
+
+-----------------------Java------------------------------
+
+import java.util.*;
+class Solution {
+    public int minPartitions(String n) {
+        char maxChar = '0'; 
+        for (char c : n.toCharArray()) { 
+            if (c > maxChar) { 
+                maxChar = c; 
+                } 
+            } // Convert that character to its integer value 
+        return maxChar - '0';
+    }
+}
